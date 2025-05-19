@@ -1,0 +1,36 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+}
+header {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: gold;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #ccc;
+}
+a {
+    color: gold;
+}
