@@ -1,48 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breathing Canvas Tattoos</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breathing Canvas Tattoos - Where Ink Meets Soul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Breathing Canvas Tattoos</h1>
-        <p>Where Ink Meets Soul</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#artists">Artists</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Breathing Canvas Tattoos Logo">
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Breathing Canvas Tattoos is more than just ink on skin — it’s a space where stories are etched into living canvases. Founded in Pune, our studio blends bold creativity with a deep respect for the art of tattooing. We specialize in personalized designs, crafted with precision, passion, and a whole lot of soul.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Breathing Canvas Tattoos</h1>
+    <p>Where Ink Meets Soul</p>
+    <a href="#booking" class="cta-button">Book Your Session</a>
+  </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out our work on Instagram: <a href="https://www.instagram.com/breathingcanvastattoos" target="_blank">@breathingcanvastattoos</a></p>
-    </section>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1519408299519-2fc27e847762?q=80&w=300&auto=format&fit=crop" alt="Realism portrait tattoo on arm">
+        <p>Realism Portrait</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1579319561506-4b2a3e12511a?q=80&w=300&auto=format&fit=crop" alt="Traditional rose tattoo">
+        <p>Traditional Rose</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1578353117710-4f7f35118e1c?q=80&w=300&auto=format&fit=crop" alt="Geometric wolf tattoo">
+        <p>Geometric Wolf</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1620401537438-1d7339e765fe?q=80&w=300&auto=format&fit=crop" alt="Watercolor butterfly tattoo">
+        <p>Watercolor Butterfly</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="artists">
-        <h2>Artists</h2>
-        <p>Our lead artist specializes in fine line and custom tattoos, transforming concepts into timeless expressions on skin.</p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Breathing Canvas Tattoos, we believe every tattoo tells a story. Our artists are passionate about transforming your vision into art that resonates with your soul.</p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Pune, Maharashtra</p>
-        <p>Open: Tue–Sun, 11 AM – 8 PM</p>
-        <p><a href="https://wa.me/yourwhatsappnumber" target="_blank">WhatsApp Us</a> | <a href="https://www.instagram.com/breathingcanvastattoos" target="_blank">Instagram</a></p>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <p>We offer custom tattoos, cover-ups, and consultations. Specializing in realism, traditional, and watercolor styles. Contact us for pricing and aftercare advice.</p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Breathing Canvas Tattoos</p>
-    </footer>
+  <!-- Booking Section -->
+  <section id="booking" class="booking">
+    <h2>Book an Appointment</h2>
+    <form id="booking-form" onsubmit="handleBooking(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="description" placeholder="Tattoo Description" required></textarea>
+      <input type="date" name="date" required>
+      <button type="submit" class="cta-button">Submit</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@breathingcanvastattoos.com</p>
+    <p>Location: [Your Studio Address]</p>
+  </section>
+
+  <!-- Social Buttons -->
+  <div class="social-buttons">
+    <a href="https://wa.me/[your-number]" target="_blank"><img src="assets/whatsapp.png" alt="WhatsApp"></a>
+    <a href="https://www.instagram.com/breathingcanvastattoos" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Breathing Canvas Tattoos. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
